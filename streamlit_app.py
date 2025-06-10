@@ -204,7 +204,7 @@ with tab4:
             msg = EmailMessage()
             msg["Subject"] = f"New Contact Submission Form from {fullName}"
             msg["From"] = st.secrets['email']['address']
-            msg['To'] = st.secrets['email']['address']
+            msg["To"] = st.secrets['email']['address']
             msg.set_content(f"From: {fullName} <{email}>\n\nMessage:\n{text}")
 
             if uploaded_file:
@@ -214,7 +214,7 @@ with tab4:
 
             try:
                 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-                    smtp.login("rapidreach02@gmail.com", "fkerjnwnyxhkuabg")
+                    smtp.login(st.secrets['email']['address'], st.secrets['email']['password'])
                     smtp.send_message(msg)
                 st.success("Your message has been sent!")
             except Exception as e:
