@@ -188,13 +188,13 @@ with tab4:
     st.markdown('<p style="font-size: 32px; color: #212529;"> Contact Us </p>', unsafe_allow_html=True)
     with st.form("Email Form"):
         st.markdown('<div style="margin-bottom: -8px;"><label style="color:#212529; font-size:16px;">Subject</label></div>',unsafe_allow_html=True)
-        subject = st.text_input(label="", placeholder="Please enter the subject line for your email.")
+        subject = st.text_input(label=" ", placeholder="Please enter the subject line for your email.")
         st.markdown('<div style="margin-bottom: -8px;"><label style="color:#212529; font-size:16px;">Name</label></div>', unsafe_allow_html=True)
-        fullName = st.text_input(label="", placeholder="Please enter your full name here for when we reach out.")
+        fullName = st.text_input(label=" ", placeholder="Please enter your full name here for when we reach out.")
         st.markdown('<div style=margin-bottom: -8px;"><label style="color:#212529; font-size:16px;">Email</label></div>', unsafe_allow_html=True)
-        email = st.text_input(label="", placeholder="Please enter your email address so that we can reach out.")
+        email = st.text_input(label=" ", placeholder="Please enter your email address so that we can reach out.")
         st.markdown('<div style=margin-bottom: -8px"><label style="color:#212529; font-size:16px">Info</label></div>', unsafe_allow_html=True)
-        text = st.text_area(label="", placeholder="Please enter any comments or questions that you have here.")
+        text = st.text_area(label=" ", placeholder="Please enter any comments or questions that you have here.")
         uploaded_file = st.file_uploader("Attachment", type=["pdf", "docx", "png", "jpg", "tiff", "mp4"])
         submit_res = st.form_submit_button(label="Send")
     if submit_res:
