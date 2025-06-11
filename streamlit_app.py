@@ -19,10 +19,21 @@ from email.message import EmailMessage
 st.set_page_config(layout="wide")
 st.markdown("""
 <style>
-    .responsive-video video {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
+    @media (max-width: 600px) {
+        .responsive-video {
+                display: flex;
+                justify-content: center;
+                margin-top: 12px;
+                margin-bottom: 12px;
+        }
+    }
+    @media (min-width: 601px) {
+        .responsive-video video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
     }
     @media (max-width: 600px) {
         .responsive-text {
@@ -120,16 +131,22 @@ with tab1:
     video_bytes = video_path.read_bytes()
     encoded = base64.b64encode(video_bytes).decode()
     video_html = f"""
-    <div class="responsive-video">
-    <video autoplay muted loop controls>
-    <source src="data:video/mp4;base64,{encoded}" type ="video/mp4">
-    Your browser does not support the video tag.
+<div style="display: flex; flex-direction: column; align-items: left; margin-top: 12px;">
+  <div class="responsive-video">
+    <video width=700 autoplay muted loop controls>
+      <source src="data:video/mp4;base64,{encoded}" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
-    </div>
-    <div class="responsive-text"> <p style="margin-top: 8px; color: #212529; "> The Rapid Reach Surgical Retractor Arm is the first ever
-      rapidly adjustable one handed surgical retractor arm.</p></div>
-    """
-    html(video_html, height=350)
+  </div>
+  <div class="responsive-text">
+    <p style="margin-top: 8px; color: #212529;">
+      The Rapid Reach Surgical Retractor Arm is the first ever
+      rapidly adjustable one-handed surgical retractor arm.
+    </p>
+  </div>
+</div>
+"""
+    html(video_html, height=332)
     st.markdown('<div class="responsive-text"> <p style="color: #212529;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
