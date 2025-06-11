@@ -19,6 +19,21 @@ from email.message import EmailMessage
 st.set_page_config(layout="wide")
 st.markdown("""
 <style>
+    .responsive-video video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    @media (max-width: 600px) {
+        .responsive-text {
+            font-size: 32px;
+        }
+    }
+    @media (min-width: 601px) {
+        .responsive-text {
+            font-size: 24px;
+        }
+    }
     .stApp {
         background-color: #f8f9fa;
     }
@@ -97,20 +112,22 @@ st.markdown("""
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
-    st.markdown('<p style="font-size:32px; color: #212529"> The RapidReach <sup><small>Patent Pending</small></sup></p>', unsafe_allow_html=True)
-    st.write()
+    st.markdown('<div class="responsive-text"><p style="font-size:32px; color: #212529">' \
+    ' The RapidReach <sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
     st.write()
     st.markdown('<p style="font-size:20px; color: #212529"> Device in Use </p>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
     video_bytes = video_path.read_bytes()
     encoded = base64.b64encode(video_bytes).decode()
     video_html = f"""
+    <div class="responsive-video">
     <video width="700" autoplay muted loop controls>
     <source src="data:video/mp4;base64,{encoded}" type ="video/mp4">
     Your browser does not support the video tag.
     </video>
-    <p style="margin-top: 8px; font-size=32px; color: #212529; "> The Rapid Reach Surgical Retractor Arm is the first ever
-      rapidly adjustable one handed surgical retractor arm. </p>
+    </div>
+    <div class="responsive-text"> <p style="margin-top: 8px; font-size=32px; color: #212529; "> The Rapid Reach Surgical Retractor Arm is the first ever
+      rapidly adjustable one handed surgical retractor arm.</p></div>
     """
     html(video_html, height=350)
     st.markdown('<p style="font-size:32px; color: #212529;"> VOC Interview Feedback on Previous Products </p>', unsafe_allow_html=True)
