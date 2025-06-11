@@ -112,7 +112,7 @@ st.markdown("""
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
-    st.markdown('<div class="responsive-text"><p style="font-size:32px; color: #212529">' \
+    st.markdown('<div class="responsive-text"><p style="color: #212529">' \
     ' The RapidReach <sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
     st.write()
     st.markdown('<p style="font-size:20px; color: #212529"> Device in Use </p>', unsafe_allow_html=True)
@@ -121,16 +121,16 @@ with tab1:
     encoded = base64.b64encode(video_bytes).decode()
     video_html = f"""
     <div class="responsive-video">
-    <video width="700" autoplay muted loop controls>
+    <video autoplay muted loop controls>
     <source src="data:video/mp4;base64,{encoded}" type ="video/mp4">
     Your browser does not support the video tag.
     </video>
     </div>
-    <div class="responsive-text"> <p style="margin-top: 8px; font-size=32px; color: #212529; "> The Rapid Reach Surgical Retractor Arm is the first ever
+    <div class="responsive-text"> <p style="margin-top: 8px; color: #212529; "> The Rapid Reach Surgical Retractor Arm is the first ever
       rapidly adjustable one handed surgical retractor arm.</p></div>
     """
     html(video_html, height=350)
-    st.markdown('<p style="font-size:32px; color: #212529;"> VOC Interview Feedback on Previous Products </p>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"> <p style="color: #212529;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown('<p style="font-size:20px; color: #212529;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p>', unsafe_allow_html=True)
@@ -182,13 +182,13 @@ with tab2:
         st.markdown('<p style="font-size:14px; color:#212529;"> Rohan just graduated with a Bachelors in Biomedical Engineering with a minor in Supply Chains at Georgia Tech. \
          He will beging the MBID program at Georgia Tech next semester. </p>', unsafe_allow_html=True)
 with tab3:
-    st.markdown('<p style="font-size:32px; color:#212529;"> Market Impact </p>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"><p style="color:#212529;"> Market Impact</p></div>', unsafe_allow_html=True)
     st.markdown('<p style="font-size:14px; color: #212529;"> More than 30 million ENT and Plastic surgeries occur'
     ' in the US annually, many of which rely on surgical retractors to maintain visibility, preserve sterility,'
     'and minimize tissue damage. However, current surgical retractor holders typically rely on screw based locking' \
     ' mechanisms that take up to 2 minutes to adjust making them impractical as ENT and Plastic surgeries usually require' \
     ' retractor repositioning once every 10 minutes. This forces OR staff to manually hold and adjust surgical retractors'
-    ' for the full 5-8 hour duration of the average ENT and Plastic surgery. </p>', unsafe_allow_html=True)
+    ' for the full 5-8 hour duration of the average ENT and Plastic surgery.</p>', unsafe_allow_html=True)
     st.markdown('<p style="font-size:14px; color: #212529;"> This leads to: </p>', unsafe_allow_html=True)
     st.markdown("""<ul style="font-size:14px; color: #212529;">
     <li>Slippage of the retractor</li>
@@ -204,7 +204,7 @@ with tab3:
     ' annually across the US, while improving surgeon workflow and reducing OR staff and patient injuries.</p>',
       unsafe_allow_html=True)
 with tab4:
-    st.markdown('<p style="font-size: 32px; color: #212529;"> Contact Us </p>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"><p style="font-size: 32px; color: #212529;">Contact Us</p></div>', unsafe_allow_html=True)
     with st.form("Email Form"):
         st.markdown('<div style="margin-bottom: -8px;"><label style="color:#212529; font-size:16px;">Subject</label></div>',unsafe_allow_html=True)
         subject = st.text_input(label=" ", placeholder="Please enter the subject line for your email.")
