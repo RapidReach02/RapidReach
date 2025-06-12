@@ -162,22 +162,22 @@ with tab1:
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown('<p style="font-size:20px; color: #212529;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529;"> -Dr. Elwood, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Elwood, MD </p>', unsafe_allow_html=True)
     with col2:
-        st.markdown('<p style="font-size:20px; color: #212529;">\"Can take 5,6,7 hours which can add to the frustration just trying to position the retractor perfectly.\"</p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529;"> -Dr. Kamdar, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:20px; color: #212529;">\"Can take 5, 6, 7 hours which can add to the frustration just trying to position the retractor perfectly.\"</p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Kamdar, MD </p>', unsafe_allow_html=True)
     with col3:
         st.markdown('<p style="font-size:20px; color: #212529;">\"Some retractors slip and you must keep moving around.\"</p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529;"> -Dr. Scarborough, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Scarborough, MD </p>', unsafe_allow_html=True)
 
     st.markdown('<p style="font-size:32px; color: #212529;"> User Feedback </p>', unsafe_allow_html=True)
     col4, col5 = st.columns(2)
     with col4:
         st.markdown(f'<p style="font-size:20px; color: #212529;"> \"This is better than what\'s out there.\" </p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529;"> -Charles Hower, MS3 </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529;"> — Charles Hower, MS3 </p>', unsafe_allow_html=True)
     with col5:
         st.markdown(f'<p style="font-size:20px; color: #212529;"> \"I\'ve never seen anything like this.\" </p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529;"> -Roberto Soriano, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529;"> — Roberto Soriano, MD </p>', unsafe_allow_html=True)
 
 
 Michael = Image.open('Michael.jpg')
