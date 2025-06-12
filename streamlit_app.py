@@ -131,12 +131,15 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
+    left_col, cent_col, last_col = st.columns(3)
+    with cent_co:
     st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=280)
     st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
     ' The RapidReach Arm </p></div>', unsafe_allow_html=True)
     st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
     '<sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
     st.write()
+
     st.markdown('<p style="font-size:26px; color: #379991"> Device In Use </p>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
     video_bytes = video_path.read_bytes()
@@ -195,14 +198,14 @@ with tab2:
     st.markdown('<p style="font-size:32px; color:#379991;"> About the Team </p>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image(Michael, caption='Michael Pavelchek', use_container_width=True, width=200)
+        st.image(Michael, caption='Michael Pavelchek', use_container_width=True, width=150)
         st.markdown('<p style="font-size:16px; color:#212529;"> Michael graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Robotics in Spring 2025. \
         He will begin the MBID program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
     with col2:
-        st.image(David, caption='Dawei Liu', use_container_width=True, width=200)
+        st.image(David, caption='Dawei Liu', use_container_width=True, width=150)
         st.markdown('<p style="font-size:16px; color:#212529;"> Dawei is an aspiring physician-scientist and graduated from Georgia Tech with a BS in Biomedical Engineering. He plans to become a Research Technician at the Cleveland Clinic. </p>', unsafe_allow_html=True)
     with col3:
-        st.image(John, caption='John Cutrone', use_container_width=True, width=200)
+        st.image(John, caption='John Cutrone', use_container_width=True, width=150)
         st.markdown('<p style="font-size:16px; color:#212529;"> John has recently graduated with a BS in Biomedical Engineering with the Research Option from Georgia Tech. \
         He is currently studying in the Johns Hopkins CBID Master’s Program. </p>', unsafe_allow_html=True)
 
