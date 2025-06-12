@@ -133,7 +133,7 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1: 
-    st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
+    st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=100)
     st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
     'The RapidReach Arm </p></div>', unsafe_allow_html=True)
     st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
