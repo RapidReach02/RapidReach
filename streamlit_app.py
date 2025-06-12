@@ -99,7 +99,7 @@ st.markdown("""
 
     /* Individual tabs */
     button[data-baseweb="tab"] {
-        color: white !important;
+        color: #369893 !important;
         background-color: white !important;
         font-size: 16px;
         padding: 10px 20px;
@@ -206,7 +206,7 @@ with tab2:
     col4, col5 = st.columns(2)
     with col4:
         st.image(Stefano, caption='Stefano Poma', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:14px; color:#212529;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color:#212529;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. He will begin his Ph.D. in Neuroscience and Neurotechnology at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
     with col5:
         st.image(Rohan, caption='Rohan Ravula', use_container_width=True, width=150)
         st.markdown('<p style="font-size:14px; color:#212529;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
