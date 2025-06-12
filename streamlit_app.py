@@ -131,7 +131,7 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
-cola, colb, colc = st.columns(3)
+    cola, colb, colc = st.columns(3)
     with colb: 
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=280)
         st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
