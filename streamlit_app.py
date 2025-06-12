@@ -20,12 +20,6 @@ from email.message import EmailMessage
 st.set_page_config(layout="wide")
 st.markdown("""
 <style>
-    header[data-testid="stHeader"]{
-        background-image: 'RapidReachLogo.png';
-        background-repeat: repeat;
-        background-size: contain;
-        height: 10%;
-    } 
 
     @media (max-width: 600px) {
         .responsive-video {
@@ -55,8 +49,6 @@ st.markdown("""
     }
     .stApp {
         background-color: #f8f9fa;
-
-    
     }
 
     /* Sticky container for header + tabs */
@@ -64,8 +56,8 @@ st.markdown("""
         position: sticky;
         top: 48px;
         z-index: 999;
-        background-color: #00ff88;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        background-color: #1c4574;
+        box-shadow: 0 2px 10px rgba(35,134,147,255));
         margin-bottom: 10px;
         width: 100%;
     }
@@ -73,8 +65,8 @@ st.markdown("""
         
     /* Header styling inside the sticky container */
     .custom-header {
-        background-color: ffffff;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        background-color: 287793;
+        box-shadow: 0 2px 10px rgba(35,134,147,255);
         top: 0px;
         color: white;
         font-size: 28px;
@@ -93,9 +85,9 @@ st.markdown("""
         top: 48px;
         left: 0;
         width: 100vw !important;
-        background-color: black !important;
+        background-color: white !important;
         padding: 12px 0;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        box-shadow: 0 2px 10px rgba(35,134,147,255);
         z-index: 1001;
     }
 
@@ -108,20 +100,20 @@ st.markdown("""
     /* Individual tabs */
     button[data-baseweb="tab"] {
         color: white !important;
-        background-color: black !important;
+        background-color: white !important;
         font-size: 16px;
         padding: 10px 20px;
     }
 
     /* Hover effect */
     button[data-baseweb="tab"]:hover {
-        background-color: #007bff !important;
+        background-color: #379991 !important;
     }
 
     /* Selected tab */
     button[data-baseweb="tab"][aria-selected="true"] {
-        border-bottom: 3px solid #00dd44 !important;
-        color: #007bff !important;
+        border-bottom: 3px solid #379991 !important;
+        color: #379991 !important;
     }
 
     /* Add some padding below sticky container so content not hidden */
