@@ -20,6 +20,13 @@ from email.message import EmailMessage
 st.set_page_config(layout="wide")
 st.markdown("""
 <style>
+    header[data-testid="stHeader"]{
+        background-image: 'RapidReachLogo.png';
+        background-repeat: repeat;
+        background-size: contain;
+        height: 10%;
+    } 
+
     @media (max-width: 600px) {
         .responsive-video {
                 display: flex;
@@ -48,6 +55,8 @@ st.markdown("""
     }
     .stApp {
         background-color: #f8f9fa;
+
+    
     }
 
     /* Sticky container for header + tabs */
@@ -61,10 +70,7 @@ st.markdown("""
         width: 100%;
     }
 
-    RRLogo = Image.open('RapidReachLogo.png')
-    st.image(RRLogo, caption='RapidReach: Patent Pending', use_container_width=True, width=100)
-   
-    
+        
     /* Header styling inside the sticky container */
     .custom-header {
         background-color: ffffff;
