@@ -99,7 +99,7 @@ st.markdown("""
 
     /* Individual tabs */
     button[data-baseweb="tab"] {
-        color: #369893 !important;
+        color: #379991 !important;
         background-color: black !important;
         font-size: 16px;
         padding: 10px 20px;
@@ -131,10 +131,10 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
-    st.markdown('<div class="responsive-text"><p style="color: #227e94">' \
+    st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
     ' The RapidReach <sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
     st.write()
-    st.markdown('<p style="font-size:20px; color: #379991"> Device in Use </p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:20px; color: #379991"> Device In Use </p>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
     video_bytes = video_path.read_bytes()
     encoded = base64.b64encode(video_bytes).decode()
@@ -189,7 +189,7 @@ Stefano = Image.open('Stefano.jpg')
 Rohan = Image.open('Rohan.jpg')
 
 with tab2:
-    st.markdown('<p style="font-size:32px; color:#212529;"> About the Team </p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:32px; color:#379991;"> About the Team </p>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
         st.image(Michael, caption='Michael Pavelchek', use_container_width=True, width=200)
@@ -206,13 +206,13 @@ with tab2:
     col4, col5 = st.columns(2)
     with col4:
         st.image(Stefano, caption='Stefano Poma', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:14px; color:#212529;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. He will begin his Ph.D. in Neuroscience and Neurotechnology at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color:#212529;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. He will begin his PhD in Neuroscience and Neurotechnology at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
     with col5:
         st.image(Rohan, caption='Rohan Ravula', use_container_width=True, width=150)
         st.markdown('<p style="font-size:14px; color:#212529;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
          He will begin the MBID program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
 with tab3:
-    st.markdown('<div class="responsive-text"><p style="color:#212529;"> Market Impact</p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"><p style="color:#379991;"> Market Impact</p></div>', unsafe_allow_html=True)
     st.markdown('<p style="font-size:14px; color: #212529;"> More than 30 million ENT and plastic surgeries occur'
     ' in the US annually, many of which rely on surgical retractors to maintain visibility, preserve sterility,'
     'and minimize tissue damage. However, current surgical retractor holders typically rely on screw based locking' \
