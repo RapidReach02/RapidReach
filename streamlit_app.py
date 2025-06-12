@@ -65,7 +65,7 @@ st.markdown("""
         
     /* Header styling inside the sticky container */
     .custom-header {
-        background-color: 287793;
+        background-color: #287793;
         box-shadow: 0 2px 10px rgba(35,134,147,255);
         top: 0px;
         color: white;
@@ -131,10 +131,10 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
-    st.markdown('<div class="responsive-text"><p style="color: #212529">' \
+    st.markdown('<div class="responsive-text"><p style="color: #379991">' \
     ' The RapidReach <sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
     st.write()
-    st.markdown('<p style="font-size:20px; color: #212529"> Device in Use </p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:20px; color: #379991"> Device in Use </p>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
     video_bytes = video_path.read_bytes()
     encoded = base64.b64encode(video_bytes).decode()
