@@ -131,7 +131,7 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
-    cola, colb, colc = st.columns(3)
+cola, colb, colc = st.columns(3)
     with colb: 
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=280)
         st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
@@ -144,7 +144,7 @@ with tab1:
         video_path = Path("General Demonstration.mp4")
         video_bytes = video_path.read_bytes()
         encoded = base64.b64encode(video_bytes).decode()
-            if (screen_height is not None and screen_width is not None):
+        if (screen_height is not None and screen_width is not None):
             width_sc = (int(700/1440 * screen_width))
             height_sc = (int(332/900 * screen_height))
             video_html = f"""
@@ -164,7 +164,7 @@ with tab1:
             </div>
             """
             html(video_html, height=height_sc)
-            else:
+        else:
                 st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
             st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
    
