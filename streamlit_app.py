@@ -131,20 +131,20 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
-    left_col, cent_col, last_col = st.columns(3)
-    with cent_co:
-    st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=280)
-    st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
-    ' The RapidReach Arm </p></div>', unsafe_allow_html=True)
-    st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
-    '<sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
-    st.write()
+    cola, colb, colc = st.columns(3)
+    with colb: 
+        st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=280)
+        st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
+        'The RapidReach Arm </p></div>', unsafe_allow_html=True)
+        st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
+        '<sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
+        st.write()
 
-    st.markdown('<p style="font-size:26px; color: #379991"> Device In Use </p>', unsafe_allow_html=True)
-    video_path = Path("General Demonstration.mp4")
-    video_bytes = video_path.read_bytes()
-    encoded = base64.b64encode(video_bytes).decode()
-    if (screen_height is not None and screen_width is not None):
+        st.markdown('<p style="font-size:26px; color: #379991"> Device In Use </p>', unsafe_allow_html=True)
+        video_path = Path("General Demonstration.mp4")
+        video_bytes = video_path.read_bytes()
+        encoded = base64.b64encode(video_bytes).decode()
+        if (screen_height is not None and screen_width is not None):
         width_sc = (int(700/1440 * screen_width))
         height_sc = (int(332/900 * screen_height))
         video_html = f"""
@@ -164,9 +164,10 @@ with tab1:
         </div>
         """
         html(video_html, height=height_sc)
-    else:
-        st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
-    st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
+        else:
+            st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
+        st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
+   
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown('<p style="font-size:20px; color: #212529;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p>', unsafe_allow_html=True)
