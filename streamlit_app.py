@@ -58,8 +58,6 @@ st.markdown("""
         z-index: 999;
         background-color: #1c4574;
         box-shadow: 0 2px 10px rgba(35,134,147,255));
-        margin-left: 5px;
-        margin-right: 5px;
         margin-bottom: 10px;
         width: 100%;
     }
