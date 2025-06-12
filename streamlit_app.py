@@ -149,7 +149,7 @@ with tab1:
         </div>
         <div class="responsive-text">
             <p style="margin-top: 8px; color: #212529;">
-            The Rapid Reach Surgical Retractor Arm is the first ever
+            The RapidReach Surgical Retractor Arm is the first ever
             rapidly adjustable one-handed surgical retractor arm.
             </p>
         </div>
@@ -192,14 +192,14 @@ with tab2:
     with col1:
         st.image(Michael, caption='Michael Pavelchek', use_container_width=True, width=200)
         st.markdown('<p style="font-size:14px; color:#212529;"> Michael graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Robotics in Spring 2025. \
-        He will begin the MBID program at Georgia Tech in Fall 2026. </p>', unsafe_allow_html=True)
+        He will begin the MBID program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
     with col2:
         st.image(David, caption='Dawei Liu', use_container_width=True, width=200)
         st.markdown('<p style="font-size:14px; color:#212529;"> Dawei is an aspiring physician-scientist and graduated from Georgia Tech with a BS in Biomedical Engineering. He plans to become a Research Technician at the Cleveland Clinic. </p>', unsafe_allow_html=True)
     with col3:
         st.image(John, caption='John Cutrone', use_container_width=True, width=200)
-        st.markdown('<p style="font-size:14px; color:#212529;"> John has recently graduated with a BS in Biomedical Engineering from Georgia Tech with the Research Option." \
-        " He is currently studying in the Johns Hopkins CBID Master\’s Program. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color:#212529;"> John has recently graduated with a BS in Biomedical Engineering with the Research Option from Georgia Tech. \
+        He is currently studying in the Johns Hopkins CBID Master’s Program. </p>', unsafe_allow_html=True)
 
     col4, col5 = st.columns(2)
     with col4:
@@ -208,7 +208,7 @@ with tab2:
     with col5:
         st.image(Rohan, caption='Rohan Ravula', use_container_width=True, width=150)
         st.markdown('<p style="font-size:14px; color:#212529;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
-         He will begin the MBID program at Georgia Tech next semester. </p>', unsafe_allow_html=True)
+         He will begin the MBID program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
 with tab3:
     st.markdown('<div class="responsive-text"><p style="color:#212529;"> Market Impact</p></div>', unsafe_allow_html=True)
     st.markdown('<p style="font-size:14px; color: #212529;"> More than 30 million ENT and plastic surgeries occur'
