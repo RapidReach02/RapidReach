@@ -131,6 +131,7 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
+    st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=280)
     st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
     ' The RapidReach <sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
     st.write()
@@ -193,34 +194,34 @@ with tab2:
     col1, col2, col3 = st.columns(3)
     with col1:
         st.image(Michael, caption='Michael Pavelchek', use_container_width=True, width=200)
-        st.markdown('<p style="font-size:14px; color:#212529;"> Michael graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Robotics in Spring 2025. \
+        st.markdown('<p style="font-size:16px; color:#212529;"> Michael graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Robotics in Spring 2025. \
         He will begin the MBID program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
     with col2:
         st.image(David, caption='Dawei Liu', use_container_width=True, width=200)
-        st.markdown('<p style="font-size:14px; color:#212529;"> Dawei is an aspiring physician-scientist and graduated from Georgia Tech with a BS in Biomedical Engineering. He plans to become a Research Technician at the Cleveland Clinic. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:16px; color:#212529;"> Dawei is an aspiring physician-scientist and graduated from Georgia Tech with a BS in Biomedical Engineering. He plans to become a Research Technician at the Cleveland Clinic. </p>', unsafe_allow_html=True)
     with col3:
         st.image(John, caption='John Cutrone', use_container_width=True, width=200)
-        st.markdown('<p style="font-size:14px; color:#212529;"> John has recently graduated with a BS in Biomedical Engineering with the Research Option from Georgia Tech. \
+        st.markdown('<p style="font-size:16px; color:#212529;"> John has recently graduated with a BS in Biomedical Engineering with the Research Option from Georgia Tech. \
         He is currently studying in the Johns Hopkins CBID Master’s Program. </p>', unsafe_allow_html=True)
 
     col4, col5 = st.columns(2)
     with col4:
         st.image(Stefano, caption='Stefano Poma', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:14px; color:#212529;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. He will begin his PhD in Neuroscience and Neurotechnology at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:16px; color:#212529;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. He will begin his PhD in Neuroscience and Neurotechnology at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
     with col5:
         st.image(Rohan, caption='Rohan Ravula', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:14px; color:#212529;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
+        st.markdown('<p style="font-size:16px; color:#212529;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
          He will begin the MBID program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
 with tab3:
-    st.markdown('<div class="responsive-text"><p style="color:#379991;"> Market Impact</p></div>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> More than 30 million ENT and plastic surgeries occur'
+    st.markdown('<div class="responsive-text"><p style="font-size:32px; color:#379991"> Market Impact </p></div>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:18px; color: #212529;"> More than 30 million ENT and plastic surgeries occur'
     ' in the US annually, many of which rely on surgical retractors to maintain visibility, preserve sterility,'
     'and minimize tissue damage. However, current surgical retractor holders typically rely on screw based locking' \
     ' mechanisms that take up to 2 minutes to adjust making them impractical as ENT and plastic surgeries usually require' \
     ' retractor repositioning once every 10 minutes. This forces OR staff to manually hold and adjust surgical retractors'
     ' for the full 5-8 hour duration of the average ENT and plastic surgery.</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> This leads to: </p>', unsafe_allow_html=True)
-    st.markdown("""<ul style="font-size:14px; color: #212529;">
+    st.markdown('<p style="font-size:16px; color: #212529;"> This leads to: </p>', unsafe_allow_html=True)
+    st.markdown("""<ul style="font-size:18px; color: #212529;">
     <li>Slippage of the retractor</li>
     <li>Physical strain on staff</li>
     <li>Diverted Attention from critical surgical tasks</li>
@@ -228,7 +229,7 @@ with tab3:
    </ul>""", unsafe_allow_html=True)
     st.markdown('<p style="font-size:14px; color: #212529;"> This is not a minor issue; retractor-related slippage injuries' \
     ' have been estimated to occur in up to 30% of all surgeries.</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> The Rapid Reach Surgical Retractor Arm addresses these issues' \
+    st.markdown('<p style="font-size:14px; color: #212529;"> The RapidReach Surgical Retractor Arm addresses these issues' \
     ' by enabling one-handed, rapid adjustments in 15 seconds, a reduction of over 88% in adjustment time. This innovation' \
     ' can recover up to 50 minutes of surgery, potentially saving millions of hours and billions of dollars for hospitals' \
     ' annually across the US, while improving surgeon workflow and reducing OR staff and patient injuries.</p>',
