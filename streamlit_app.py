@@ -144,29 +144,29 @@ with tab1:
         video_path = Path("General Demonstration.mp4")
         video_bytes = video_path.read_bytes()
         encoded = base64.b64encode(video_bytes).decode()
-        if (screen_height is not None and screen_width is not None):
-        width_sc = (int(700/1440 * screen_width))
-        height_sc = (int(332/900 * screen_height))
-        video_html = f"""
-        <div style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 12px;">
-        <div class="responsive-video">
-            <video width={width_sc} autoplay muted loop controls>
-            <source src="data:video/mp4;base64,{encoded}" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="responsive-text">
-            <p style="margin-top: 8px; color: #212529;">
+            if (screen_height is not None and screen_width is not None):
+            width_sc = (int(700/1440 * screen_width))
+            height_sc = (int(332/900 * screen_height))
+            video_html = f"""
+            <div style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 12px;">
+            <div class="responsive-video">
+                <video width={width_sc} autoplay muted loop controls>
+                <source src="data:video/mp4;base64,{encoded}" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="responsive-text">
+                <p style="margin-top: 8px; color: #212529;">
             The RapidReach Surgical Retractor Arm is the first ever
             rapidly adjustable one-handed surgical retractor arm.
             </p>
-        </div>
-        </div>
-        """
-        html(video_html, height=height_sc)
-        else:
-            st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
-        st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
+            </div>
+            </div>
+            """
+            html(video_html, height=height_sc)
+            else:
+                st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
+            st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
    
     col1, col2, col3 = st.columns(3)
     with col1:
