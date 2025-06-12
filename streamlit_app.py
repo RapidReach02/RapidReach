@@ -191,32 +191,32 @@ with tab2:
     col1, col2, col3 = st.columns(3)
     with col1:
         st.image(Michael, caption='Michael Pavelchek', use_container_width=True, width=200)
-        st.markdown('<p style="font-size:14px; color:#212529;"> Michael graduated last semester with a Bachelors in Biomedical Engineering at Georgia Tech with a minor in Robotics. \
-        He will begin the MBID program at Georgia Tech next semester. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color:#212529;"> Michael graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Robotics in Spring 2025. \
+        He will begin the MBID program at Georgia Tech in Fall 2026. </p>', unsafe_allow_html=True)
     with col2:
         st.image(David, caption='Dawei Liu', use_container_width=True, width=200)
-        st.markdown('<p style="font-size:14px; color:#212529;"> Dawei is an aspiring doctor who just graduated from Georgia Tech\'s undergraduated BMED program and hopes to become a Research Technician at the Cleveland Clinic. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color:#212529;"> Dawei is an aspiring physician-scientist and graduated from Georgia Tech with a BS in Biomedical Engineering. He plans to become a Research Technician at the Cleveland Clinic. </p>', unsafe_allow_html=True)
     with col3:
         st.image(John, caption='John Cutrone', use_container_width=True, width=200)
-        st.markdown('<p style="font-size:14px; color:#212529;"> John has recently graduated with a bachelors in Biomedical Engineering at Georgia Tech with a minor in Research." \
-        " He is currently studying at Johns Hopkins CBID masters program. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color:#212529;"> John has recently graduated with a BS in Biomedical Engineering from Georgia Tech with the Research Option." \
+        " He is currently studying in the Johns Hopkins CBID Master\’s Program. </p>', unsafe_allow_html=True)
 
     col4, col5 = st.columns(2)
     with col4:
         st.image(Stefano, caption='Stefano Poma', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:14px; color:#212529;"> Stefano has recently graduated with a Bachelors in Biomedical Engineering at Georgia Tech with a minor in Artificial Intelligence. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color:#212529;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. </p>', unsafe_allow_html=True)
     with col5:
         st.image(Rohan, caption='Rohan Ravula', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:14px; color:#212529;"> Rohan just graduated with a Bachelors in Biomedical Engineering with a minor in Supply Chains at Georgia Tech. \
-         He will beging the MBID program at Georgia Tech next semester. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color:#212529;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
+         He will begin the MBID program at Georgia Tech next semester. </p>', unsafe_allow_html=True)
 with tab3:
     st.markdown('<div class="responsive-text"><p style="color:#212529;"> Market Impact</p></div>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> More than 30 million ENT and Plastic surgeries occur'
+    st.markdown('<p style="font-size:14px; color: #212529;"> More than 30 million ENT and plastic surgeries occur'
     ' in the US annually, many of which rely on surgical retractors to maintain visibility, preserve sterility,'
     'and minimize tissue damage. However, current surgical retractor holders typically rely on screw based locking' \
-    ' mechanisms that take up to 2 minutes to adjust making them impractical as ENT and Plastic surgeries usually require' \
+    ' mechanisms that take up to 2 minutes to adjust making them impractical as ENT and plastic surgeries usually require' \
     ' retractor repositioning once every 10 minutes. This forces OR staff to manually hold and adjust surgical retractors'
-    ' for the full 5-8 hour duration of the average ENT and Plastic surgery.</p>', unsafe_allow_html=True)
+    ' for the full 5-8 hour duration of the average ENT and plastic surgery.</p>', unsafe_allow_html=True)
     st.markdown('<p style="font-size:14px; color: #212529;"> This leads to: </p>', unsafe_allow_html=True)
     st.markdown("""<ul style="font-size:14px; color: #212529;">
     <li>Slippage of the retractor</li>
