@@ -61,6 +61,26 @@ st.markdown("""
         width: 100%;
     }
 
+    RRLogo = Image.open('RapidReachLogo.png')
+    
+    st.markdown(
+    """
+    <style>
+    header[data-testid="stHeader"]{
+        background-image: RRLogo;
+        background-repeat: repeat;
+        background-size: contain;
+        height: 10%;
+    }
+    
+    section[data-testid="stSidebar"] {
+        top: 10%; 
+      }
+    </style>""",
+    unsafe_allow_html=True,
+    )
+   
+    
     /* Header styling inside the sticky container */
     .custom-header {
         background-color: ffffff;
