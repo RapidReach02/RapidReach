@@ -85,7 +85,7 @@ st.markdown("""
         top: 48px;
         left: 0;
         width: 100vw !important;
-        background-color: white !important;
+        background-color: #287793 !important;
         padding: 12px 0;
         box-shadow: 0 2px 10px rgba(35,134,147,255);
         z-index: 1001;
