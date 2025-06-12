@@ -234,11 +234,9 @@ with tab3:
     ' annually across the US, while improving surgeon workflow and reducing OR staff and patient injuries.</p>',
       unsafe_allow_html=True)
 
-RRLogo = Image.open('RapidReachLogo.png')
-
 with tab4:
     st.markdown('<div class="responsive-text"><p style="font-size: 32px; color: #212529;">Contact Us</p></div>', unsafe_allow_html=True)
-    st.image(RRLogo, caption='RapidReach: Patent Pending', use_container_width=True, width=100)
+    st.image("RapidReachLogo.png", caption='RapidReach: Patent Pending', use_container_width=False, width=100)
     with st.form("Email Form"):
         st.markdown('<div style="margin-bottom: -8px;"><label style="color:#212529; font-size:16px;">Subject</label></div>',unsafe_allow_html=True)
         subject = st.text_input(label=" ", placeholder="Please enter the subject line for your email.")
