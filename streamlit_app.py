@@ -58,6 +58,8 @@ st.markdown("""
         z-index: 999;
         background-color: #1c4574;
         box-shadow: 0 2px 10px rgba(35,134,147,255));
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 10px;
         width: 100%;
     }
@@ -74,6 +76,7 @@ st.markdown("""
         text-align: center;
         margin-bottom: 10px;
         width: 100%;
+        
     }
 
     /* Tab list styling */
