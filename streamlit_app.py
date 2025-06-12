@@ -100,14 +100,14 @@ st.markdown("""
     /* Individual tabs */
     button[data-baseweb="tab"] {
         color: #379991 !important;
-        background-color: black !important;
+        background-color: white !important;
         font-size: 16px;
         padding: 10px 20px;
     }
 
     /* Hover effect */
     button[data-baseweb="tab"]:hover {
-        background-color: #379991 !important;
+        background-color: white !important;
     }
 
     /* Selected tab */
@@ -233,8 +233,12 @@ with tab3:
     ' can recover up to 50 minutes of surgery, potentially saving millions of hours and billions of dollars for hospitals' \
     ' annually across the US, while improving surgeon workflow and reducing OR staff and patient injuries.</p>',
       unsafe_allow_html=True)
+
+RRLogo = Image.open('RapidReachLogo.png')
+
 with tab4:
     st.markdown('<div class="responsive-text"><p style="font-size: 32px; color: #212529;">Contact Us</p></div>', unsafe_allow_html=True)
+    st.image(RRLogo, caption='RapidReach: Patent Pending', use_container_width=True, width=100)
     with st.form("Email Form"):
         st.markdown('<div style="margin-bottom: -8px;"><label style="color:#212529; font-size:16px;">Subject</label></div>',unsafe_allow_html=True)
         subject = st.text_input(label=" ", placeholder="Please enter the subject line for your email.")
