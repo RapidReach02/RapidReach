@@ -48,7 +48,7 @@ st.markdown("""
         }
     }
     .stApp {
-        background-color: #f8f9fa;
+        background-color: #ffffff;
     }
 
     /* Sticky container for header + tabs */
