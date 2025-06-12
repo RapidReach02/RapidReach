@@ -68,7 +68,7 @@ st.markdown("""
         background-color: #287793;
         box-shadow: 0 2px 10px rgba(35,134,147,255);
         top: 0px;
-        color: white;
+        color: #287793;
         font-size: 28px;
         font-weight: bold;
         text-align: center;
