@@ -100,7 +100,7 @@ st.markdown("""
     /* Individual tabs */
     button[data-baseweb="tab"] {
         color: #369893 !important;
-        background-color: white !important;
+        background-color: black !important;
         font-size: 16px;
         padding: 10px 20px;
     }
@@ -131,7 +131,7 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
-    st.markdown('<div class="responsive-text"><p style="color: #379991">' \
+    st.markdown('<div class="responsive-text"><p style="color: #227e94">' \
     ' The RapidReach <sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
     st.write()
     st.markdown('<p style="font-size:20px; color: #379991"> Device in Use </p>', unsafe_allow_html=True)
@@ -160,7 +160,7 @@ with tab1:
         html(video_html, height=height_sc)
     else:
         st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
-    st.markdown('<div class="responsive-text"> <p style="color: #212529;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"> <p style="color: #379991;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown('<p style="font-size:20px; color: #212529;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p>', unsafe_allow_html=True)
@@ -172,7 +172,7 @@ with tab1:
         st.markdown('<p style="font-size:20px; color: #212529;">\"Some retractors slip and you must keep moving around.\"</p>', unsafe_allow_html=True)
         st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Scarborough, MD </p>', unsafe_allow_html=True)
 
-    st.markdown('<p style="font-size:32px; color: #212529;"> User Feedback </p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:32px; color: #379991;"> User Feedback </p>', unsafe_allow_html=True)
     col4, col5 = st.columns(2)
     with col4:
         st.markdown(f'<p style="font-size:20px; color: #212529;"> \"This is better than what\'s out there.\" </p>', unsafe_allow_html=True)
