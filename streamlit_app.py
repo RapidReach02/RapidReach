@@ -1,4 +1,5 @@
 #The Rapid Reach Arm.com
+from streamlit_js_eval import streamlit_js_eval
 import streamlit as st
 import pandas as pd
 from PIL import Image
@@ -121,6 +122,11 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+screen_width = streamlit_js_eval(js_expressions='screen.width', key='SCR')
+screen_height = streamlit_js_eval(js_expressions='screen.height', key='SCR1')
+print(f"screen_width is: {screen_width}")
+print(f"screen_height is: {screen_height}")
+
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1:
     st.markdown('<div class="responsive-text"><p style="color: #212529">' \
@@ -130,23 +136,28 @@ with tab1:
     video_path = Path("General Demonstration.mp4")
     video_bytes = video_path.read_bytes()
     encoded = base64.b64encode(video_bytes).decode()
-    video_html = f"""
-<div style="display: flex; flex-direction: column; align-items: left; margin-top: 12px;">
-  <div class="responsive-video">
-    <video width=700 autoplay muted loop controls>
-      <source src="data:video/mp4;base64,{encoded}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div class="responsive-text">
-    <p style="margin-top: 8px; color: #212529;">
-      The Rapid Reach Surgical Retractor Arm is the first ever
-      rapidly adjustable one-handed surgical retractor arm.
-    </p>
-  </div>
-</div>
-"""
-    html(video_html, height=332)
+    if (screen_height is not None and screen_width is not None):
+        width_sc = (int(700/1440 * screen_width))
+        height_sc = (int(332/900 * screen_height))
+        video_html = f"""
+        <div style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 12px;">
+        <div class="responsive-video">
+            <video width={width_sc} autoplay muted loop controls>
+            <source src="data:video/mp4;base64,{encoded}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="responsive-text">
+            <p style="margin-top: 8px; color: #212529;">
+            The Rapid Reach Surgical Retractor Arm is the first ever
+            rapidly adjustable one-handed surgical retractor arm.
+            </p>
+        </div>
+        </div>
+        """
+        html(video_html, height=height_sc)
+    else:
+        st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
     st.markdown('<div class="responsive-text"> <p style="color: #212529;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -255,3 +266,4 @@ with tab4:
                 st.error(f"An error occurred: {e}")
     else:
         st.warning("Please fill out all required fields.")
+
