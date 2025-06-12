@@ -130,7 +130,7 @@ print(f"screen_width is: {screen_width}")
 print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
-with colb: 
+with tab1: 
     st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=280)
     st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
     'The RapidReach Arm </p></div>', unsafe_allow_html=True)
@@ -166,25 +166,25 @@ with colb:
         st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
         st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.markdown('<p style="font-size:20px; color: #212529;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Elwood, MD </p>', unsafe_allow_html=True)
-with col2:
-    st.markdown('<p style="font-size:20px; color: #212529;">\"Can take 5, 6, 7 hours which can add to the frustration just trying to position the retractor perfectly.\"</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Kamdar, MD </p>', unsafe_allow_html=True)
-with col3:
-    st.markdown('<p style="font-size:20px; color: #212529;">\"Some retractors slip and you must keep moving around.\"</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Scarborough, MD </p>', unsafe_allow_html=True)
-
-st.markdown('<p style="font-size:26px; color: #379991;"> User Feedback </p>', unsafe_allow_html=True)
-col4, col5 = st.columns(2)
-with col4:
-    st.markdown(f'<p style="font-size:20px; color: #212529;"> \"This is better than what\'s out there.\" </p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> — Charles Hower, MS3 </p>', unsafe_allow_html=True)
-with col5:
-    st.markdown(f'<p style="font-size:20px; color: #212529;"> \"I\'ve never seen anything like this.\" </p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> — Roberto Soriano, MD </p>', unsafe_allow_html=True)
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown('<p style="font-size:20px; color: #212529;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Elwood, MD </p>', unsafe_allow_html=True)
+    with col2:
+        st.markdown('<p style="font-size:20px; color: #212529;">\"Can take 5, 6, 7 hours which can add to the frustration just trying to position the retractor perfectly.\"</p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Kamdar, MD </p>', unsafe_allow_html=True)
+    with col3:
+        st.markdown('<p style="font-size:20px; color: #212529;">\"Some retractors slip and you must keep moving around.\"</p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Scarborough, MD </p>', unsafe_allow_html=True)
+    
+    st.markdown('<p style="font-size:26px; color: #379991;"> User Feedback </p>', unsafe_allow_html=True)
+    col4, col5 = st.columns(2)
+    with col4:
+        st.markdown(f'<p style="font-size:20px; color: #212529;"> \"This is better than what\'s out there.\" </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529;"> — Charles Hower, MS3 </p>', unsafe_allow_html=True)
+    with col5:
+        st.markdown(f'<p style="font-size:20px; color: #212529;"> \"I\'ve never seen anything like this.\" </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529;"> — Roberto Soriano, MD </p>', unsafe_allow_html=True)
 
 
 Michael = Image.open('Michael.jpg')
