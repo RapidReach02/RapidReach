@@ -190,23 +190,23 @@ with tab2:
     st.markdown('<p style="font-size:32px; color:#212529;"> About the Team </p>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image(Michael, caption='Michael', use_container_width=True, width=200)
+        st.image(Michael, caption='Michael Pavelchek', use_container_width=True, width=200)
         st.markdown('<p style="font-size:14px; color:#212529;"> Michael graduated last semester with a Bachelors in Biomedical Engineering at Georgia Tech with a minor in Robotics. \
         He will begin the MBID program at Georgia Tech next semester. </p>', unsafe_allow_html=True)
     with col2:
-        st.image(David, caption='David', use_container_width=True, width=200)
-        st.markdown('<p style="font-size:14px; color:#212529;"> David is an aspiring doctor who just graduated from Georgia Tech\'s undergraduated BMED program and hopes to become a Research Technician at the Cleveland Clinic. </p>', unsafe_allow_html=True)
+        st.image(David, caption='Dawei Liu', use_container_width=True, width=200)
+        st.markdown('<p style="font-size:14px; color:#212529;"> Dawei is an aspiring doctor who just graduated from Georgia Tech\'s undergraduated BMED program and hopes to become a Research Technician at the Cleveland Clinic. </p>', unsafe_allow_html=True)
     with col3:
-        st.image(John, caption='John', use_container_width=True, width=200)
+        st.image(John, caption='John Cutrone', use_container_width=True, width=200)
         st.markdown('<p style="font-size:14px; color:#212529;"> John has recently graduated with a bachelors in Biomedical Engineering at Georgia Tech with a minor in Research." \
         " He is currently studying at Johns Hopkins CBID masters program. </p>', unsafe_allow_html=True)
 
     col4, col5 = st.columns(2)
     with col4:
-        st.image(Stefano, caption='Stefano', use_container_width=True, width=150)
+        st.image(Stefano, caption='Stefano Poma', use_container_width=True, width=150)
         st.markdown('<p style="font-size:14px; color:#212529;"> Stefano has recently graduated with a Bachelors in Biomedical Engineering at Georgia Tech with a minor in Artificial Intelligence. </p>', unsafe_allow_html=True)
     with col5:
-        st.image(Rohan, caption='Rohan', use_container_width=True, width=150)
+        st.image(Rohan, caption='Rohan Ravula', use_container_width=True, width=150)
         st.markdown('<p style="font-size:14px; color:#212529;"> Rohan just graduated with a Bachelors in Biomedical Engineering with a minor in Supply Chains at Georgia Tech. \
          He will beging the MBID program at Georgia Tech next semester. </p>', unsafe_allow_html=True)
 with tab3:
