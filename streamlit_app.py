@@ -133,7 +133,9 @@ tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market 
 with tab1:
     st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=280)
     st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
-    ' The RapidReach <sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
+    ' The RapidReach Arm </p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
+    '<sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
     st.write()
     st.markdown('<p style="font-size:26px; color: #379991"> Device In Use </p>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
@@ -227,9 +229,9 @@ with tab3:
     <li>Diverted Attention from critical surgical tasks</li>
     <li>Increased risk to both patient safety and surgical outcomes</li>
    </ul>""", unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> This is not a minor issue; retractor-related slippage injuries' \
+    st.markdown('<p style="font-size:18px; color: #212529;"> This is not a minor issue; retractor-related slippage injuries' \
     ' have been estimated to occur in up to 30% of all surgeries.</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:14px; color: #212529;"> The RapidReach Surgical Retractor Arm addresses these issues' \
+    st.markdown('<p style="font-size:18px; color: #212529;"> The RapidReach Surgical Retractor Arm addresses these issues' \
     ' by enabling one-handed, rapid adjustments in 15 seconds, a reduction of over 88% in adjustment time. This innovation' \
     ' can recover up to 50 minutes of surgery, potentially saving millions of hours and billions of dollars for hospitals' \
     ' annually across the US, while improving surgeon workflow and reducing OR staff and patient injuries.</p>',
