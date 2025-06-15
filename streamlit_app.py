@@ -134,13 +134,10 @@ print(f"screen_height is: {screen_height}")
 tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
 with tab1: 
     st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=300)
-    st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
-    'The RapidReach Arm </p></div>', unsafe_allow_html=True)
-    st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94">' \
-    '<sup><small>Patent Pending</small></sup></p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94; text-align: center;">' \
+    '<strong>About The RapidReach Arm<sup><small>Patent Pending</small></sup></strong></p></div>', unsafe_allow_html=True)
     st.write()
-
-    st.markdown('<p style="font-size:26px; color: #379991"> Device In Use </p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:26px; color: #379991; text-align: center;"> Device In Use </p>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
     video_bytes = video_path.read_bytes()
     encoded = base64.b64encode(video_bytes).decode()
@@ -148,7 +145,7 @@ with tab1:
         width_sc = (int(700/1440 * screen_width))
         height_sc = (int(332/900 * screen_height))
         video_html = f"""
-        <div style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 12px;">
+        <div style="display: flex; flex-direction: column; align-items: center; margin-top: 12px;">
         <div class="responsive-video">
             <video width={width_sc} autoplay muted loop controls>
             <source src="data:video/mp4;base64,{encoded}" type="video/mp4">
@@ -156,7 +153,7 @@ with tab1:
             </video>
         </div>
         <div class="responsive-text">
-            <p style="margin-top: 8px; color: #212529;">
+            <p style="margin-top: 8px; color: #212529; text-align: center;">
         The RapidReach Surgical Retractor Arm is the first ever
         rapidly adjustable one-handed surgical retractor arm.
         </p>
@@ -166,27 +163,27 @@ with tab1:
         html(video_html, height=height_sc)
     else:
         st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
-        st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
+        st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991; text-align: center;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown('<p style="font-size:20px; color: #212529;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Elwood, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:20px; color: #212529; text-align: center;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Elwood, MD </p>', unsafe_allow_html=True)
     with col2:
-        st.markdown('<p style="font-size:20px; color: #212529;">\"Can take 5, 6, 7 hours which can add to the frustration just trying to position the retractor perfectly.\"</p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Kamdar, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:20px; color: #212529; text-align: center;">\"Can take 5, 6, 7 hours which can add to the frustration just trying to position the retractor perfectly.\"</p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Kamdar, MD </p>', unsafe_allow_html=True)
     with col3:
-        st.markdown('<p style="font-size:20px; color: #212529;">\"Some retractors slip and you must keep moving around.\"</p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529;"> — Dr. Scarborough, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:20px; color: #212529; text-align: center;">\"Some retractors slip and you must keep moving around.\"</p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Scarborough, MD </p>', unsafe_allow_html=True)
     
-    st.markdown('<p style="font-size:26px; color: #379991;"> User Feedback </p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:26px; color: #379991; text-align: center;"> User Feedback </p>', unsafe_allow_html=True)
     col4, col5 = st.columns(2)
     with col4:
-        st.markdown(f'<p style="font-size:20px; color: #212529;"> \"This is better than what\'s out there.\" </p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529;"> — Charles Hower, MS3 </p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-size:20px; color: #212529; text-align: center;"> \"This is better than what\'s out there.\" </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Charles Hower, MS3 </p>', unsafe_allow_html=True)
     with col5:
-        st.markdown(f'<p style="font-size:20px; color: #212529;"> \"I\'ve never seen anything like this.\" </p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529;"> — Roberto Soriano, MD </p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="font-size:20px; color: #212529; text-align: center;"> \"I\'ve never seen anything like this.\" </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Roberto Soriano, MD </p>', unsafe_allow_html=True)
 
 
 Michael = Image.open('Michael.jpg')
@@ -196,53 +193,54 @@ Stefano = Image.open('Stefano.jpg')
 Rohan = Image.open('Rohan.jpg')
 
 with tab2:
-    st.markdown('<p style="font-size:32px; color:#379991;"> About the Team </p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:32px; color:#379991; text-align: center;"> About the Team </p>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
         st.image(Michael, caption='Michael Pavelchek', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:16px; color:#212529;"> Michael graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Robotics in Spring 2025. \
+        st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Michael graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Robotics in Spring 2025. \
         He will begin the MBID program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
     with col2:
         st.image(David, caption='Dawei Liu', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:16px; color:#212529;"> Dawei is an aspiring physician-scientist and graduated from Georgia Tech with a BS in Biomedical Engineering. He plans to become a Research Technician at the Cleveland Clinic. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Dawei is an aspiring physician-scientist and graduated from Georgia Tech with a BS in Biomedical Engineering. He plans to become a Research Technician at the Cleveland Clinic. </p>', unsafe_allow_html=True)
     with col3:
         st.image(John, caption='John Cutrone', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:16px; color:#212529;"> John has recently graduated with a BS in Biomedical Engineering with the Research Option from Georgia Tech. \
+        st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> John has recently graduated with a BS in Biomedical Engineering with the Research Option from Georgia Tech. \
         He is currently studying in the Johns Hopkins CBID Master’s Program. </p>', unsafe_allow_html=True)
 
     col4, col5 = st.columns(2)
     with col4:
         st.image(Stefano, caption='Stefano Poma', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:16px; color:#212529;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. He will begin his PhD in Neuroscience and Neurotechnology at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. He will begin his PhD in Neuroscience and Neurotechnology at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
     with col5:
         st.image(Rohan, caption='Rohan Ravula', use_container_width=True, width=150)
-        st.markdown('<p style="font-size:16px; color:#212529;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
+        st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
          He will begin the MBID program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
 with tab3:
-    st.markdown('<div class="responsive-text"><p style="font-size:32px; color:#379991"> Market Impact </p></div>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:18px; color: #212529;"> More than 30 million ENT and plastic surgeries occur'
+    st.markdown('<div class="responsive-text"><p style="font-size: 32px; color:#212529; text-align: center;"><strong>Market Impact</strong></p></div>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left;"> More than <strong>30 million</strong> ENT and Plastic surgeries occur'
     ' in the US annually, many of which rely on surgical retractors to maintain visibility, preserve sterility,'
-    'and minimize tissue damage. However, current surgical retractor holders typically rely on screw based locking' \
-    ' mechanisms that take up to 2 minutes to adjust making them impractical as ENT and plastic surgeries usually require' \
-    ' retractor repositioning once every 10 minutes. This forces OR staff to manually hold and adjust surgical retractors'
-    ' for the full 5-8 hour duration of the average ENT and plastic surgery.</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:16px; color: #212529;"> This leads to: </p>', unsafe_allow_html=True)
-    st.markdown("""<ul style="font-size:18px; color: #212529;">
+    'and minimize tissue damage.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:18px; color:#212529; justify-content: center; text-align: left;"> However, current surgical retractor holders typically rely on screw based locking' \
+    ' mechanisms that take up to <strong>2 minutes</strong> to adjust making them impractical as ENT and Plastic surgeries usually require' \
+    ' retractor repositioning once every <strong>10 minutes</strong>. This forces OR staff to manually hold and adjust surgical retractors'
+    ' for the full <strong>5-8 hour duration</strong> of the average ENT and Plastic surgery.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left;"> This leads to: </p>', unsafe_allow_html=True)
+    st.markdown("""<ul style="font-size:18px; color: #212529; justify-content: center; text-align: left;">
     <li>Slippage of the retractor</li>
     <li>Physical strain on staff</li>
     <li>Diverted Attention from critical surgical tasks</li>
     <li>Increased risk to both patient safety and surgical outcomes</li>
    </ul>""", unsafe_allow_html=True)
-    st.markdown('<p style="font-size:18px; color: #212529;"> This is not a minor issue; retractor-related slippage injuries' \
-    ' have been estimated to occur in up to 30% of all surgeries.</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:18px; color: #212529;"> The RapidReach Surgical Retractor Arm addresses these issues' \
-    ' by enabling one-handed, rapid adjustments in 15 seconds, a reduction of over 88% in adjustment time. This innovation' \
-    ' can recover up to 50 minutes of surgery, potentially saving millions of hours and billions of dollars for hospitals' \
+    st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left;"> This is not a minor issue; retractor-related slippage injuries' \
+    ' have been estimated to occur in up to <strong>30%</strong> of all surgeries.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left; max-width: 1000px"> The Rapid Reach Surgical Retractor Arm addresses these issues' \
+    ' by enabling one-handed, rapid adjustments in 15 seconds, a reduction of over <strong>88%</strong> in adjustment time.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left; max-width: 1000px;"> This innovation' \
+    ' can recover up to <strong>50 minutes</strong> of surgery, potentially <strong>saving millions of hours and billions of dollars</strong> for hospitals' \
     ' annually across the US, while improving surgeon workflow and reducing OR staff and patient injuries.</p>',
       unsafe_allow_html=True)
-
 with tab4:
-    st.markdown('<div class="responsive-text"><p style="font-size: 32px; color: #212529;">Contact Us</p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"><p style="font-size: 32px; color: #212529;"><strong>Contact Us</strong></p></div>', unsafe_allow_html=True)
     st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=300)
     with st.form("Email Form"):
         st.markdown('<div style="margin-bottom: -8px;"><label style="color:#212529; font-size:16px;">Subject</label></div>',unsafe_allow_html=True)
