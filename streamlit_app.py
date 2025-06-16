@@ -185,7 +185,7 @@ with tab1:
         html(video_html, height=height_sc)
     else:
         st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
-    st.markdown('<div class="responsive-text2"> <p style="font-size:26px; color: #379991; text-align: center;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text2"> <p style="color: #379991; text-align: center;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
 
     col1, col2, col3 = st.columns(3)
     with col1:
