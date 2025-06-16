@@ -48,11 +48,21 @@ st.markdown("""
     }
     @media (max-width: 600px) {
         .responsive-text2 {
-            font-size: 20px;
+            font-size: 24px;
         }
     }
     @media (min-width: 601px) {
         .responsive-text2 {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 600px) {
+        .responsive-text3 {
+            font-size: 20px;
+        }
+    }
+    @media (min-width: 601px) {
+        .responsive-text3 {
             font-size: 16px;
         }
     }
@@ -142,14 +152,14 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["About the Device", "About the Team", "Clinical Problem", "Market Impact", "Contact Us"])
 with tab1: 
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns([1,3])
     with col1:
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
     with col2:
-        st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94; text-align: left;">' \
+        st.markdown('<div class="responsive-text"><p style="color: #227e94; text-align: left;">' \
     '<strong>About The RapidReach Arm<sup><small>Patent Pending</small></sup></strong></p></div>', unsafe_allow_html=True)
     st.write()
-    st.markdown('<p style="font-size:26px; color: #379991; text-align: center;"> Device In Use </p>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> Device In Use </p></div>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
     video_bytes = video_path.read_bytes()
     encoded = base64.b64encode(video_bytes).decode()
@@ -175,26 +185,26 @@ with tab1:
         html(video_html, height=height_sc)
     else:
         st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
-    st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991; text-align: center;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text2"> <p style="font-size:26px; color: #379991; text-align: center;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown('<p style="font-size:20px; color: #212529; text-align: center;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p>', unsafe_allow_html=True)
+        st.markdown('<div class="responsive-text3"><p style="color: #212529; text-align: center;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p></div>', unsafe_allow_html=True)
         st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Elwood, MD at Emory Healthcare Network</p>', unsafe_allow_html=True)
     with col2:
-        st.markdown('<p style="font-size:20px; color: #212529; text-align: center;">\"Can take 5, 6, 7 hours which can add to the frustration just trying to position the retractor perfectly.\"</p>', unsafe_allow_html=True)
+        st.markdown('<div class="responsive-text3"><p style="color: #212529; text-align: center;">\"Can take 5, 6, 7 hours which can add to the frustration just trying to position the retractor perfectly.\"</p></div>', unsafe_allow_html=True)
         st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Kamdar, MD at Emory Healthcare Network</p>', unsafe_allow_html=True)
     with col3:
-        st.markdown('<p style="font-size:20px; color: #212529; text-align: center;">\"Some retractors slip and you must keep moving around.\"</p>', unsafe_allow_html=True)
+        st.markdown('<div class="responsive-text3"><p style="color: #212529; text-align: center;">\"Some retractors slip and you must keep moving around.\"</p></div>', unsafe_allow_html=True)
         st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Scarborough, MD at Emory Healthcare Network</p>', unsafe_allow_html=True)
     
-    st.markdown('<p style="font-size:26px; color: #379991; text-align: center;"> User Feedback </p>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> User Feedback </p></div>', unsafe_allow_html=True)
     col4, col5 = st.columns(2)
     with col4:
-        st.markdown(f'<p style="font-size:20px; color: #212529; text-align: center;"> \"This is better than what\'s out there.\" </p>', unsafe_allow_html=True)
+        st.markdown(f'<div class="responsive-text3"><p style="color: #212529; text-align: center;"> \"This is better than what\'s out there.\" </p></div>', unsafe_allow_html=True)
         st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Charles Hower, MS3</p>', unsafe_allow_html=True)
     with col5:
-        st.markdown(f'<p style="font-size:20px; color: #212529; text-align: center;"> \"I\'ve never seen anything like this.\" </p>', unsafe_allow_html=True)
+        st.markdown(f'<div class="responsive-text3"><p style="color: #212529; text-align: center;"> \"I\'ve never seen anything like this.\" </p></div>', unsafe_allow_html=True)
         st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Roberto Soriano, MD</p>', unsafe_allow_html=True)
 
 
@@ -205,7 +215,7 @@ Stefano = Image.open('Stefano.jpg')
 Rohan = Image.open('Rohan.jpg')
 
 with tab2:
-    st.markdown('<p style="font-size:32px; color:#379991; text-align: center;"> About the Team </p>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"><p style="font-size:32px; color:#379991; text-align: center;"> About the Team </p></div>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
     with col1:
         st.image(Michael, caption='Michael Pavelchek', use_container_width=True, width=150)
@@ -231,25 +241,25 @@ with tab3:
     st.markdown('<div class="responsive-text"><p style="font-size: 32px; color:#212529; text-align: center;"><strong>Clinical Problem</strong></p></div>', unsafe_allow_html=True)
 with tab4:
     st.markdown('<div class="responsive-text"><p style="font-size: 32px; color:#212529; text-align: center;"><strong>Market Impact</strong></p></div>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left;"> More than <strong>30 million</strong> ENT and Plastic surgeries occur'
+    st.markdown('<p style="font-size:16px; color: #212529; justify-content: center; text-align: left;"> More than <strong>30 million</strong> ENT and Plastic surgeries occur'
     ' in the US annually, many of which rely on surgical retractors to maintain visibility, preserve sterility,'
     'and minimize tissue damage.</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:18px; color:#212529; justify-content: center; text-align: left;"> However, current surgical retractor holders typically rely on screw based locking' \
+    st.markdown('<p style="font-size:16px; color:#212529; justify-content: center; text-align: left;"> However, current surgical retractor holders typically rely on screw based locking' \
     ' mechanisms that take up to <strong>2 minutes</strong> to adjust making them impractical as ENT and Plastic surgeries usually require' \
     ' retractor repositioning once every <strong>10 minutes</strong>. This forces OR staff to manually hold and adjust surgical retractors'
     ' for the full <strong>5-8 hour duration</strong> of the average ENT and Plastic surgery.</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left;"> This leads to: </p>', unsafe_allow_html=True)
-    st.markdown("""<ul style="font-size:18px; color: #212529; justify-content: center; text-align: left;">
+    st.markdown('<p style="font-size:16px; color: #212529; justify-content: center; text-align: left;"> This leads to: </p>', unsafe_allow_html=True)
+    st.markdown("""<ul style="font-size:16px; color: #212529; justify-content: center; text-align: left;">
     <li>Slippage of the retractor</li>
     <li>Physical strain on staff</li>
     <li>Diverted Attention from critical surgical tasks</li>
     <li>Increased risk to both patient safety and surgical outcomes</li>
    </ul>""", unsafe_allow_html=True)
-    st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left;"> This is not a minor issue; retractor-related slippage injuries' \
+    st.markdown('<p style="font-size:16px; color: #212529; justify-content: center; text-align: left;"> This is not a minor issue; retractor-related slippage injuries' \
     ' have been estimated to occur in up to <strong>30%</strong> of all surgeries.</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left; max-width: 1000px"> The Rapid Reach Surgical Retractor Arm addresses these issues' \
+    st.markdown('<p style="font-size:16px; color: #212529; justify-content: center; text-align: left; max-width: 1000px"> The Rapid Reach Surgical Retractor Arm addresses these issues' \
     ' by enabling one-handed, rapid adjustments in 15 seconds, a reduction of over <strong>88%</strong> in adjustment time.</p>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left; max-width: 1000px;"> This innovation' \
+    st.markdown('<p style="font-size:16px; color: #212529; justify-content: center; text-align: left; max-width: 1000px;"> This innovation' \
     ' can recover up to <strong>50 minutes</strong> of surgery, potentially <strong>saving millions of hours and billions of dollars</strong> for hospitals' \
     ' annually across the US, while improving surgeon workflow and reducing OR staff and patient injuries.</p>',
       unsafe_allow_html=True)
@@ -258,7 +268,7 @@ with tab5:
     with col1:
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
     with col2:
-        st.markdown('<div class="responsive-text"><p style="font-size: 32px; color: #212529;"><strong>Contact Us</strong></p></div>', unsafe_allow_html=True)
+        st.markdown('<div class="responsive-text"><p style="color: #212529;"><strong>Contact Us</strong></p></div>', unsafe_allow_html=True)
     with st.form("Email Form"):
         st.markdown('<div style="margin-bottom: -8px;"><label style="color:#212529; font-size:16px;">Subject</label></div>',unsafe_allow_html=True)
         subject = st.text_input(label=" ", placeholder="Please enter the subject line for your email.")
