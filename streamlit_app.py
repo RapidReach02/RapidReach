@@ -140,7 +140,7 @@ screen_height = streamlit_js_eval(js_expressions='screen.height', key='SCR1')
 print(f"screen_width is: {screen_width}")
 print(f"screen_height is: {screen_height}")
 
-tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market Size", "Contact Us"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["About the Device", "About the Team", "Clinical Problem", "Market Impact", "Contact Us"])
 with tab1: 
     col1, col2 = st.columns(2)
     with col1:
@@ -175,7 +175,7 @@ with tab1:
         html(video_html, height=height_sc)
     else:
         st.warning("Waiting for screen dimensions... Please reload if nothing appears.")
-        st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991; text-align: center;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"> <p style="font-size:26px; color: #379991; text-align: center;">VOC Interview Feedback on Previous Products</p></div>', unsafe_allow_html=True)
 
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -228,6 +228,8 @@ with tab2:
         st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
          He will begin the MBID program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
 with tab3:
+    st.markdown('<div class="responsive-text"><p style="font-size: 32px; color:#212529; text-align: center;"><strong>Clinical Problem</strong></p></div>', unsafe_allow_html=True)
+with tab4:
     st.markdown('<div class="responsive-text"><p style="font-size: 32px; color:#212529; text-align: center;"><strong>Market Impact</strong></p></div>', unsafe_allow_html=True)
     st.markdown('<p style="font-size:18px; color: #212529; justify-content: center; text-align: left;"> More than <strong>30 million</strong> ENT and Plastic surgeries occur'
     ' in the US annually, many of which rely on surgical retractors to maintain visibility, preserve sterility,'
@@ -251,7 +253,7 @@ with tab3:
     ' can recover up to <strong>50 minutes</strong> of surgery, potentially <strong>saving millions of hours and billions of dollars</strong> for hospitals' \
     ' annually across the US, while improving surgeon workflow and reducing OR staff and patient injuries.</p>',
       unsafe_allow_html=True)
-with tab4:
+with tab5:
     col1, col2 = st.columns(2)
     with col1:
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
