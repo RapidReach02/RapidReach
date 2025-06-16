@@ -6,7 +6,6 @@ from PIL import Image
 from streamlit.components.v1 import html
 import base64
 from pathlib import Path
-import streamlit as st
 import base64
 from streamlit.components.v1 import html
 from PIL import Image
@@ -45,6 +44,16 @@ st.markdown("""
     @media (min-width: 601px) {
         .responsive-text {
             font-size: 24px;
+        }
+    }
+    @media (max-width: 600px) {
+        .responsive-text2 {
+            font-size: 20px;
+        }
+    }
+    @media (min-width: 601px) {
+        .responsive-text2 {
+            font-size: 16px;
         }
     }
     .stApp {
