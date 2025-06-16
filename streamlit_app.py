@@ -180,13 +180,13 @@ with tab1:
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown('<p style="font-size:20px; color: #212529; text-align: center;">\"After doing something a lot you work around the limitations and stop thinking about it.\"</p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Elwood, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Elwood, MD at Emory Healthcare Network</p>', unsafe_allow_html=True)
     with col2:
         st.markdown('<p style="font-size:20px; color: #212529; text-align: center;">\"Can take 5, 6, 7 hours which can add to the frustration just trying to position the retractor perfectly.\"</p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Kamdar, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Kamdar, MD at Emory Healthcare Network</p>', unsafe_allow_html=True)
     with col3:
         st.markdown('<p style="font-size:20px; color: #212529; text-align: center;">\"Some retractors slip and you must keep moving around.\"</p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Scarborough, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Scarborough, MD at Emory Healthcare Network</p>', unsafe_allow_html=True)
     
     st.markdown('<p style="font-size:26px; color: #379991; text-align: center;"> User Feedback </p>', unsafe_allow_html=True)
     col4, col5 = st.columns(2)
@@ -226,7 +226,7 @@ with tab2:
     with col5:
         st.image(Rohan, caption='Rohan Ravula', use_container_width=True, width=150)
         st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
-         He will begin the MBID program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
+         He will begin the MS BMED program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
 with tab3:
     st.markdown('<div class="responsive-text"><p style="font-size: 32px; color:#212529; text-align: center;"><strong>Clinical Problem</strong></p></div>', unsafe_allow_html=True)
 with tab4:
