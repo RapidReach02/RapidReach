@@ -144,10 +144,10 @@ tab1, tab2, tab3, tab4 = st.tabs(["About the Device", "About the Team", "Market 
 with tab1: 
     col1, col2 = st.columns(2)
     with col1:
+        st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
+    with col2:
         st.markdown('<div class="responsive-text"><p style="font-size:35px; color: #227e94; text-align: center;">' \
     '<strong>About The RapidReach Arm<sup><small>Patent Pending</small></sup></strong></p></div>', unsafe_allow_html=True)
-    with col2:
-        st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
     st.write()
     st.markdown('<p style="font-size:26px; color: #379991; text-align: center;"> Device In Use </p>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
@@ -252,8 +252,11 @@ with tab3:
     ' annually across the US, while improving surgeon workflow and reducing OR staff and patient injuries.</p>',
       unsafe_allow_html=True)
 with tab4:
-    st.markdown('<div class="responsive-text"><p style="font-size: 32px; color: #212529;"><strong>Contact Us</strong></p></div>', unsafe_allow_html=True)
-    st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=300)
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
+    with col2:
+        st.markdown('<div class="responsive-text"><p style="font-size: 32px; color: #212529;"><strong>Contact Us</strong></p></div>', unsafe_allow_html=True)
     with st.form("Email Form"):
         st.markdown('<div style="margin-bottom: -8px;"><label style="color:#212529; font-size:16px;">Subject</label></div>',unsafe_allow_html=True)
         subject = st.text_input(label=" ", placeholder="Please enter the subject line for your email.")
