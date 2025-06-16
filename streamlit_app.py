@@ -155,7 +155,7 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["About the Device", "About the Team", "Clinical Problem", "Market Impact", "Contact Us"])
 with tab1: 
-    col1, col2 = st.columns([1,3])
+    col1, col2 = st.columns([2,3])
     with col1:
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
     with col2:
