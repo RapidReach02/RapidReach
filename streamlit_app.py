@@ -192,10 +192,10 @@ with tab1:
     col4, col5 = st.columns(2)
     with col4:
         st.markdown(f'<p style="font-size:20px; color: #212529; text-align: center;"> \"This is better than what\'s out there.\" </p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Charles Hower, MS3 </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Charles Hower, MS3</p>', unsafe_allow_html=True)
     with col5:
         st.markdown(f'<p style="font-size:20px; color: #212529; text-align: center;"> \"I\'ve never seen anything like this.\" </p>', unsafe_allow_html=True)
-        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Roberto Soriano, MD </p>', unsafe_allow_html=True)
+        st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Roberto Soriano, MD</p>', unsafe_allow_html=True)
 
 
 Michael = Image.open('Michael.jpg')
