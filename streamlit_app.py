@@ -36,36 +36,39 @@ st.markdown("""
             object-fit: contain;
         }
     }
+    
     @media (max-width: 600px) {
+        .responsive-text {
+            font-size: 24px;
+        }
+    }
+    @media (max-width: 600px) {
+        .responsive-text2 {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 600px) {
+        .responsive-text3 {
+            font-size: 16px;
+        }
+    }
+
+    @media (min-width: 601px) {
         .responsive-text {
             font-size: 32px;
         }
     }
     @media (min-width: 601px) {
-        .responsive-text {
-            font-size: 24px;
-        }
-    }
-    @media (max-width: 600px) {
         .responsive-text2 {
             font-size: 24px;
         }
     }
     @media (min-width: 601px) {
-        .responsive-text2 {
-            font-size: 16px;
-        }
-    }
-    @media (max-width: 600px) {
         .responsive-text3 {
             font-size: 20px;
         }
     }
-    @media (min-width: 601px) {
-        .responsive-text3 {
-            font-size: 16px;
-        }
-    }
+    
     .stApp {
         background-color: #ffffff;
     }
