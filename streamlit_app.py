@@ -198,7 +198,7 @@ with tab1:
         st.markdown('<div class="responsive-text3"><p style="color: #212529; text-align: center;">\"Some retractors slip and you must keep moving around.\"</p></div>', unsafe_allow_html=True)
         st.markdown('<p style="font-size:14px; color: #212529; text-align: center;"> — Dr. Scarborough, MD at Emory Healthcare Network</p>', unsafe_allow_html=True)
     
-    st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> User Feedback </p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"><p style="color: #379991; text-align: center;"> User Feedback </p></div>', unsafe_allow_html=True)
     col4, col5 = st.columns(2)
     with col4:
         st.markdown(f'<div class="responsive-text3"><p style="color: #212529; text-align: center;"> \"This is better than what\'s out there.\" </p></div>', unsafe_allow_html=True)
