@@ -244,7 +244,7 @@ with tab3:
     st.markdown('<div class="responsive-text"><p style="color:#212529; text-align: center;"><strong>Clinical Problem</strong></p></div>', unsafe_allow_html=True)
     st.image("TAM_SAM.jpg", caption = "TAM and SAM for Surgical Retractor Arm", width = 300)
 with tab4:
-    st.markdown('<div class="responsive-text"><p style="font-size: 32px; color:#212529; text-align: center;"><strong>Market Impact</strong></p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"><p style="color:#212529; text-align: center;"><strong>Market Impact</strong></p></div>', unsafe_allow_html=True)
     st.markdown('<p style="font-size:16px; color: #212529; justify-content: center; text-align: left;"> More than <strong>30 million</strong> ENT and Plastic surgeries occur'
     ' in the US annually, many of which rely on surgical retractors to maintain visibility, preserve sterility,'
     'and minimize tissue damage.</p>', unsafe_allow_html=True)
