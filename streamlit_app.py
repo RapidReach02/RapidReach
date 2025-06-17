@@ -153,7 +153,7 @@ screen_height = streamlit_js_eval(js_expressions='screen.height', key='SCR1')
 print(f"screen_width is: {screen_width}")
 print(f"screen_height is: {screen_height}")
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["About the Device", "About the Team", "Clinical Problem", "Market Impact", "Contact Us"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["About the Device", "About the Team", "Market Impact", "Clinical Problem", "Contact Us"])
 with tab1: 
     col1, col2 = st.columns([1,3])
     with col1:
