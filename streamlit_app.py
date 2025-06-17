@@ -242,7 +242,7 @@ with tab2:
          He will begin the MS BMED program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
 with tab3:
     st.markdown('<div class="responsive-text"><p style="color:#212529; text-align: center;"><strong>Clinical Problem</strong></p></div>', unsafe_allow_html=True)
-    st.image("TAM_SAM.jpg", caption = "TAM and SAM for Surgical Retractor Arm", use_container_width = True)
+    st.image("TAM_SAM.jpg", caption = "TAM and SAM for Surgical Retractor Arm", use_container_width=True)
     st.markdown('<div class="responsive-text3"><p style="color:#212529; text-align: center;">Here are the listed Total Addressable Market (TAM) and Serviceable Addressable Market (SAM) for surgical retractor arms.</p></div>', unsafe_allow_html = True)
     st.markdown('<div class="responsive-text3"><p style="color:#212529; text-align: center;">TAM was calculated as the maximum number of ORs that could be in use at any given moment in all hospitals and ambulatory service centers across the US. This maximum number was then multiplied by the price of a competing predicate device of $5,500.</p></div>', unsafe_allow_html = True)
     st.markdown('<div class="responsive-text3"><p style="color:#212529; text-align: center;">SAM instead was calculated similarly to TAM but on the global stage using the maximum number of ORs in all hospitals and ambulatory service centers across the entire world times the cost of the predicate device.</p></div>', unsafe_allow_html = True)
