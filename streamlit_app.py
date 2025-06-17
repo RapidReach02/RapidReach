@@ -241,7 +241,8 @@ with tab2:
         st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
          He will begin the MS BMED program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
 with tab3:
-    st.markdown('<div class="responsive-text"><p style="font-size: 32px; color:#212529; text-align: center;"><strong>Clinical Problem</strong></p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="responsive-text"><p style="color:#212529; text-align: center;"><strong>Clinical Problem</strong></p></div>', unsafe_allow_html=True)
+    st.image("TAM_SAM.jpg", caption = "TAM and SAM for Surgical Retractor Arm", width = 300)
 with tab4:
     st.markdown('<div class="responsive-text"><p style="font-size: 32px; color:#212529; text-align: center;"><strong>Market Impact</strong></p></div>', unsafe_allow_html=True)
     st.markdown('<p style="font-size:16px; color: #212529; justify-content: center; text-align: left;"> More than <strong>30 million</strong> ENT and Plastic surgeries occur'
