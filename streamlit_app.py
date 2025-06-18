@@ -155,12 +155,14 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["About the Device", "About the Team", "Market Impact", "Clinical Problem", "Contact Us"])
 with tab1: 
-    col1, col2 = st.columns([1,3])
+    col1, col2, col3 = st.columns(3)
     with col1:
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
     with col2:
         st.markdown('<div class="responsive-text"><p style="color: #227e94; text-align: center;">' \
     '<strong>About The RapidReach Arm<sup style="font-size: 0.4em;">Patent Pending</small</sup></strong></p></div>', unsafe_allow_html=True)
+    with col3:
+        st.image()
     st.write()
     st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> Device In Use </p></div>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
@@ -232,7 +234,7 @@ with tab2:
         st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> John has recently graduated with a BS in Biomedical Engineering with the Research Option from Georgia Tech. \
         He is currently studying in the Johns Hopkins CBID Master’s Program. </p>', unsafe_allow_html=True)
 
-    col4, col5 = st.columns(2)
+    col4, col5 = st.columns([1,3])
     with col4:
         st.image(Stefano, caption='Stefano Poma', use_container_width=True, width=100)
         st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. He will begin his PhD in Neuroscience and Neurotechnology at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
