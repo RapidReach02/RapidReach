@@ -158,19 +158,26 @@ with tab1:
     col1, col2 = st.columns([1, 5])
     with col1:
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
+    
     with col2:
-        st.markdown('<div class="responsive-text"><p style="color: #227e94; text-align: right;">' \
-    '<strong>About The RapidReach Arm<sup style="font-size: 0.4em;">Patent Pending</sup></strong></p></div>', unsafe_allow_html=True)
-
+        st.markdown(
+            '<div class="responsive-text"><p style="color: #227e94; text-align: center;">'
+            '<strong>About The RapidReach Arm<sup style="font-size: 0.5em;">Patent Pending</sup></strong></p></div>',
+            unsafe_allow_html=True
+        )
+    
+    # Embed local image in center of horizontal line
     image_path = "RapidReach Arm.png"
     with open(image_path, "rb") as img_file:
         base64_image = base64.b64encode(img_file.read()).decode()
+
     st.markdown(f"""
     <div style="display: flex; align-items: center; margin: 20px 0;">
-    <hr style="flex: 1; border: none; border-top: 1px solid: #bbb;">
-    <img src="data:image/png;base64,{base64_image}" style="margin: 0 20px;">
-    <hr style="flex: 1; border: none; border-top: 1px solid: #bbb;">
-    </div>""", unsafe_allow_html=True)
+        <hr style="flex: 1; border: none; border-top: 1px solid #bbb;">
+        <img src="data:image/png;base64,{base64_image}" style="margin: 0 20px; height: 40px;">
+        <hr style="flex: 1; border: none; border-top: 1px solid #bbb;">
+    </div>
+    """, unsafe_allow_html=True)
     st.write()
     st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> Device In Use </p></div>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
