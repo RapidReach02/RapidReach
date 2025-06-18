@@ -159,10 +159,16 @@ with tab1:
     with col1:
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
     with col2:
-        st.markdown('<div class="responsive-text"><p style="color: #227e94; text-align: center;">' \
+        st.markdown('<div class="responsive-text"><p style="color: #227e94; text-align: left;">' \
     '<strong>About The RapidReach Arm<sup style="font-size: 0.4em;">Patent Pending</small</sup></strong></p></div>', unsafe_allow_html=True)
     
     st.image('RapidReach Arm.png', caption='Rapid Reach Arm', use_container_width=False, width=300)
+    st.markdown("""
+    <div style="display: flex; align-items: center; margin: 20px 0;>
+    <hr style="flex: 1; border: none; border-top: 1px solid: #bbb;">
+    <img src="RapidReach Arm.png" style="margin: 0 20px;">
+    <hr style="flex: 1; border: none; border-top: 1px solid: #bbb;")
+    </div>""", unsafe_allow_html=True)
     st.write()
     st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> Device In Use </p></div>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
