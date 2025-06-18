@@ -163,7 +163,7 @@ with tab1:
                     '<strong>About The RapidReach Arm<sup style="font-size: 0.4em;">Patent Pending</sup></strong></p></div>', unsafe_allow_html=True)
 
     # Embed local image in center of horizontal line
-    col4, col5, col6 = st.columns(1,5,1)
+    col4, col5, col6 = st.columns([1,5,1])
     with col5:
         st.image("RapidReach Arm.png", caption="Rapid Reach Arm", use_container_width=False, width=300)
     
