@@ -163,7 +163,7 @@ with tab1:
     '<strong>About The RapidReach Arm<sup style="font-size: 0.4em;">Patent Pending</small</sup></strong></p></div>', unsafe_allow_html=True)
     with col4:
         st.markdown('<div style= "text-align: right;">', unsafe_allow_html=True)
-        st.image('Figure 1_ Labeled RapidReach Arm.jpg', caption='Rapid Reach Arm Side View', use_container_width=False, width=150)
+        st.image('RapidReach Arm.png', caption='Rapid Reach Arm Physical Prototype', use_container_width=False, width=150)
         st.markdown('</div>', unsafe_allow_html=True)
     st.write()
     st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> Device In Use </p></div>', unsafe_allow_html=True)
