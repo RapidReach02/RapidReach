@@ -165,11 +165,7 @@ with tab1:
     # Embed local image in center of horizontal line
     col4, col5, col6 = st.columns([5,1,7])
     with col5:
-        st.markdown(f"""
-        <div style="text-align: center;">
-        <img src="data:image/png;base64,{base64.b64encode(open(image_path, "rb").read()).decode()}"
-            alt="Rapid Reach Arm" width="300">
-        </div>""", unsafe_allow_html=True)
+        st.image("RapidReach Arm.png", use_container_width=False, width=300)
     
     st.write()
     st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> Device In Use </p></div>', unsafe_allow_html=True)
