@@ -163,9 +163,13 @@ with tab1:
                     '<strong>About The RapidReach Arm<sup style="font-size: 0.4em;">Patent Pending</sup></strong></p></div>', unsafe_allow_html=True)
 
     # Embed local image in center of horizontal line
-    col4, col5, col6 = st.columns([2,1,3])
+    col4, col5, col6 = st.columns([5,1,7])
     with col5:
-        st.image("RapidReach Arm.png", caption="Rapid Reach Arm", use_container_width=False, width=300)
+        st.markdown(f"""
+        <div style="text-align: center;">
+        <img src="data:image/png;base64,{base64.b64encode(open(image_path, "rb").read()).decode()}"
+            alt="Rapid Reach Arm" width="300">
+        </div>""", unsafe_allow_html=True)
     
     st.write()
     st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> Device In Use </p></div>', unsafe_allow_html=True)
