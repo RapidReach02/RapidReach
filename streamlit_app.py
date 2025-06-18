@@ -161,7 +161,7 @@ with tab1:
     with col2:
         st.markdown('<div class="responsive-text"><p style="color: #227e94; text-align: center;">' \
     '<strong>About The RapidReach Arm<sup style="font-size: 0.4em;">Patent Pending</small</sup></strong></p></div>', unsafe_allow_html=True)
-    with col4:
+    with col3:
         st.markdown('<div style= "text-align: right;">', unsafe_allow_html=True)
         st.image('RapidReach Arm.png', caption='Rapid Reach Arm', use_container_width=False, width=150)
         st.markdown('</div>', unsafe_allow_html=True)
