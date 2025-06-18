@@ -165,7 +165,7 @@ with tab1:
     # Embed local image in center of horizontal line
     col4, col5, col6 = st.columns([1,5,1])
     with col5:
-        st.image("RapidReach Arm.png", caption="Rapid Reach Arm", use_container_width=False, width=300)
+        st.image("John.jpg", caption="Rapid Reach Arm", use_container_width=False, width=300)
     
     st.write()
     st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> Device In Use </p></div>', unsafe_allow_html=True)
