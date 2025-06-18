@@ -159,7 +159,7 @@ with tab1:
     with col1:
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
     with col2:
-        st.markdown('<div class="responsive-text"><p style="color: #227e94; text-align: center;">' \
+        st.markdown('<div class="responsive-text"><p style="color: #227e94; text-align: right;">' \
     '<strong>About The RapidReach Arm<sup style="font-size: 0.4em;">Patent Pending</sup></strong></p></div>', unsafe_allow_html=True)
 
     image_path = "RapidReach Arm.png"
