@@ -234,7 +234,7 @@ with tab2:
         st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> John has recently graduated with a BS in Biomedical Engineering with the Research Option from Georgia Tech. \
         He is currently studying in the Johns Hopkins CBID Master’s Program. </p>', unsafe_allow_html=True)
 
-    col4, col5 = st.columns([1,3])
+    col4, col5 = st.columns(2)
     with col4:
         st.image(Stefano, caption='Stefano Poma', use_container_width=True, width=150)
         st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. He will begin his PhD in Neuroscience and Neurotechnology at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
