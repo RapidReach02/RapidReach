@@ -162,7 +162,6 @@ with tab1:
         st.markdown('<div class="responsive-text"><p style="color: #227e94; text-align: left;">' \
     '<strong>About The RapidReach Arm<sup style="font-size: 0.4em;">Patent Pending</small</sup></strong></p></div>', unsafe_allow_html=True)
     
-    st.image('RapidReach Arm.png', caption='Rapid Reach Arm', use_container_width=False, width=300)
     st.markdown("""
     <div style="display: flex; align-items: center; margin: 20px 0;>
     <hr style="flex: 1; border: none; border-top: 1px solid: #bbb;">
