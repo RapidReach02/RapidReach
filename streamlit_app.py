@@ -155,14 +155,14 @@ print(f"screen_height is: {screen_height}")
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["About the Device", "About the Team", "Market Impact", "Clinical Problem", "Contact Us"])
 with tab1: 
-    col1, col2, col3 = st.columns([1, 5, 1])
+    col1, col2 = st.columns([1, 5])
     with col1:
         st.image("RapidReachLogoT.png", caption='RapidReach: Patent Pending', use_container_width=False, width=150)
     with col2:
         st.markdown('<div class="responsive-text"><p style="color: #227e94; text-align: center;">' \
     '<strong>About The RapidReach Arm<sup style="font-size: 0.4em;">Patent Pending</small</sup></strong></p></div>', unsafe_allow_html=True)
-    with col3:
-        st.image('RapidReach Arm.png', caption='Rapid Reach Arm', use_container_width=False, width=300)
+    
+    st.image('RapidReach Arm.png', caption='Rapid Reach Arm', use_container_width=False, width=300)
     st.write()
     st.markdown('<div class="responsive-text2"><p style="color: #379991; text-align: center;"> Device In Use </p></div>', unsafe_allow_html=True)
     video_path = Path("General Demonstration.mp4")
