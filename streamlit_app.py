@@ -236,10 +236,10 @@ with tab2:
 
     col4, col5 = st.columns([1,3])
     with col4:
-        st.image(Stefano, caption='Stefano Poma', use_container_width=True, width=100)
+        st.image(Stefano, caption='Stefano Poma', use_container_width=True, width=150)
         st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Stefano has recently graduated with a BS in Biomedical Engineering from Georgia Tech with a minor in Artificial Intelligence. He will begin his PhD in Neuroscience and Neurotechnology at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
     with col5:
-        st.image(Rohan, caption='Rohan Ravula', use_container_width=True, width=100)
+        st.image(Rohan, caption='Rohan Ravula', use_container_width=True, width=150)
         st.markdown('<p style="font-size:16px; color:#212529; text-align: center;"> Rohan just graduated with a BS in Biomedical Engineering with a minor in Supply Chain from Georgia Tech. \
          He will begin the MS BMED program at Georgia Tech in Fall 2025. </p>', unsafe_allow_html=True)
 with tab3:
